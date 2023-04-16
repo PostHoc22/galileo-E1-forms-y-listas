@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 - Formularios</title>
+</head>
+
+<body>
+    <head> <!-- ecabezado - titulo principal -->
+        <h1>Formulario de registro</h1>
+    </head>
+    <main>
+        <form action=""> <!-- datos del formulario -->
+            <div> <!-- registro de nombre -->
+                <label for="name">Nombre:</label>
+                <input type="text" name="nombre" id="name" required>
+            </div>
+            <br>
+            <div> <!-- registro de apellido -->
+                <label for="surname">Apellido:</label>
+                <input type="text" name="apellido" id="surname" required>
+            </div>
+            <br>
+            <div> <!-- registro de modalidad de cursada -->
+                <span>Modalidad de cursada:</span>
+
+                <input type="radio" name="modalidadCursada" id="onDemand" value="on-demand" required>
+                <label for="onDemand">On-Demand</label>
+
+                <input type="radio" name="modalidadCursada" id="vivo" value="vivo" required>
+                <label for="vivo">En vivo</label>
+            </div>
+            <br>
+            <div> <!-- registro de correo electronico -->
+                <label for="mail">Correo:</label>
+                <input type="email" name="email" id="mail" required>
+            </div>
+            <br>
+            <div> <!-- registro de notificaciones para el usuario -->
+                <input type="checkbox" name="recibeInfo" id="info" value="acepta">
+                <label for="info">Deseo recibir información sobre nuevos posteos en la plataforma de Nucba.</label>
+            </div>
+            <br>
+            <div> <!-- registro de aceptacion de terminos y condiciones -->
+                <input type="checkbox" name="terminos-condiciones" id="terminos" value="acepta">
+                <label for="terminos">Declaro que lei los terminos y condiciones y estoy listo para convertirme en
+                    desarrollador web Full Stack.</label>
+            </div>
+            <br>
+            <div> <!-- boton de envio de formulario -->
+                <button type="submit" value="enviarFormulario">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
